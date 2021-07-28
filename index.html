@@ -1,13 +1,57 @@
-<!DOCTYPE html> 
-  
-<html> 
-    <head> 
-        <title> 
-            First Web Page 
-        </title> 
-    </head> 
-  
-    <body> 
-        Hello World! 
-    </body> 
-</html> 
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="box.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="settings">
+        <p>
+            Number of cells: <input id= "num_cells_input" type = "number">
+            <input id = "num_cells_submit" type = "submit" value="Submit" class="button5">
+        </p>
+    
+        <p>
+            Randomize cells: <input id = "random_submit" type = "submit" value="Randomize It" class="button5">
+        </p>
+    
+        <p>
+            Sort cells: 
+            <select name="algorithms" id="sorts">
+                <option value="BubbeSort">Bubble Sort</option>
+                <option value="MergeSort">Merge Sort</option>
+                <option value="InsertionSort">Insertion Sort</option>
+                <option value="QuickSort">Quick Sort</option>
+            </select>
+            <input id = "sort_submit" type = "submit" value="Sort It" class="button5">
+        </p>
+
+        <p style="font-size:0.8em; text-align: right;">Made by: Coby Hong</p>
+    </div>
+
+
+    <span class="container" style="height: 500px">
+        <ul>
+            <li class="box" value="0">H</li>
+            <li class="box" value="0">E</li>
+            <li class="box" value="0">L</li>
+            <li class="box" value="0">L</li>
+            <li class="box" value="0">O</li>
+            <li class="box" value="0"></li>
+            <li class="box" value="0">W</li>
+            <li class="box" value="0">O</li>
+            <li class="box" value="0">R</li>
+            <li class="box" value="0">L</li>
+            <li class="box" value="0">D</li>
+        </ul>
+    </span>
+    <script src = "box.js"></script>
+
+</body>
+
+</html>
