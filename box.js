@@ -20,7 +20,7 @@ function generateBoxes(e)
             ul.appendChild(li);
         }
     }
-    e.preventDefault();
+    // e.preventDefault();
 }
 
 
@@ -39,7 +39,7 @@ function randomizeBoxes(e)
 
         boxes[i].style.backgroundColor = "rgba(42, 170, 138, " + (height/600).toString() + ")";
     }
-    e.preventDefault();
+    // e.preventDefault();
 }
 
 
@@ -108,7 +108,7 @@ async function bubbleSort(e, boxes)
          }
       }
     }
-    e.preventDefault();
+    // e.preventDefault();
 }
 
 // ============================================================
@@ -154,7 +154,7 @@ async function insertionSort(e, boxes)
             // await sleep(0);
 
         }
-    e.preventDefault();
+    // e.preventDefault();
 }
 
 // ============================================================
@@ -206,7 +206,7 @@ function partition(e, boxes, start, end) {
     boxes[end].style.height = temp2[1];
     boxes[end].style.backgroundColor = temp2[2];
 
-    e.preventDefault();
+    // e.preventDefault();
     return i;
 }
 
@@ -232,7 +232,7 @@ async function quicksort(e, boxes, start = 0, end = undefined) {
         playSound(boxes, start, old_color);
         await sleep(50);
     }
-    e.preventDefault();
+    // e.preventDefault();
     return boxes;
 }
 
@@ -343,7 +343,7 @@ async function quicksort(e, boxes, start = 0, end = undefined) {
             k++;
         }
     }
-    e.preventDefault();
+    // e.preventDefault();
 }
 
 // ============================================================
