@@ -1,0 +1,83 @@
+*
+{
+    font-family: 'Gowun Dodum', sans-serif !important;
+    font-size: 20;
+    font-weight: 1000;
+    color: rgb(153, 153, 153);
+}
+
+.cell
+{
+    width: 40px;
+    height: 40px;
+
+    margin: 2px;
+    display: inline-block;
+
+    background: rgb(238, 238, 238);
+    box-shadow: 8px 8px 8px -4px lightblue;
+    border: 1px dashed rgb(175, 175, 175);
+    border-radius: 10px;
+
+    -webkit-transition: background 0.5s;
+    -moz-transition:    background 0.5s;
+    -ms-transition:     background 0.5s;
+    -o-transition:      background 0.5s;
+    transition:         transform 0.3s, background 0.5s;
+}
+
+.cell:hover { transform: scale(0.8); }
+
+/* make numbers hidden */
+.cell_value
+{
+    /* visibility: hidden; */
+    text-align: center;
+    vertical-align: middle;
+    line-height: 40px; 
+}
+
+.grid
+{
+    width: 440px;
+    height: 440px;
+    margin-left: 2%;
+}
+
+.noselect
+{
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}
+
+input
+{
+
+    border-radius: 10px;  
+    border: 1px solid rgb(175, 175, 175);
+    box-shadow: 8px 8px 8px -4px lightblue;
+
+    transition: transform 0.3s, background 0.3s;
+}
+
+input + input
+{
+    margin-left: 20px;
+}
+
+input:hover
+{
+    transform: scale(1.1);
+    background: lightblue;
+}
+
+input:active
+{
+    background: rgba(122, 182, 202, 0.856);
+    transform: scale(0.9);
+}
